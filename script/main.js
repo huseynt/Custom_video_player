@@ -24,13 +24,6 @@ video.addEventListener("mouseenter",function () {
 // current video time -------------------------
 video.addEventListener("timeupdate", MyFunction)
 function MyFunction(){
-    let i = 0
-    if (Math.floor(video.currentTime)>60) {
-        i += 1
-    }
-    // else {
-    //     timeLine.innerText=`${Math.floor(video.currentTime)} san`;
-    // }
     timeLine.innerText=`${video.currentTime>60 ? Math.floor(video.currentTime/60) : 0}:${video.currentTime>60? Math.floor(video.currentTime)-(Math.floor(video.currentTime/60)*60): Math.floor(video.currentTime)} san`;
 }
 // volume range ------------------------------
