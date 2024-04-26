@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Controls</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <!-- video player -->
+    <div id="videoPlayer">
+        <video id="video">
+            <source id="vidSource" src="./assets/media/What Happens In One Minute_.mp4" type="video/mp4">
+        </video>
+        <div id="videoControls">
+            <button id="vidPlay" class="border"><img src="./assets/play.svg"></button>
+            <button id="vidStop" class="border"><img src="./assets/pause.svg"></button>
+            <!-- <button id="vidVolUp" class="border">Vol +</button> -->
+            <!-- <button id="vidVolDown" class="border">Vol -</button> -->
+            <input type="range" min="0" max="100" value="30" id="rangeVol">
+            <div id="volumePercent"></div>
+            <input type="range" min="0" value="0" id="rangeVid">
+            <div id="timeLine">0:0 san</div>
+            <img id="fullScreen" style="margin-left: 10px;" src="./assets/fullscreen.svg">
+            <!-- <p id="rangeText"></p> -->
+        </div>
+    </div>
+
+
+
+    <script src="./script/main.js"></script>
+    </body>
+    </html>
